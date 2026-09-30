@@ -1,173 +1,343 @@
-<main>
-<!-- FEITICEIRO -->
-    <section>
-        <h2>Feiticeiro</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-        <dl>
-            <dt>Domínios</dt>
-            <dd>Arcano e Meia-noite</dd>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <dt>Evasão inicial</dt>
-            <dd>10</dd>
+    <title>Feiticeiro - Daggerheart</title>
 
-            <dt>Pontos de vida iniciais</dt>
-            <dd>6</dd>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
-            <dt>Itens de classe</dt>
-            <dd>Um orbe sussurrante ou uma herança de família</dd>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
-            <dt>Habilidade de Esperança</dt>
-            <dd>
-                <strong>Magia Volátil:</strong>
-                gaste 3 Pontos de Esperança para rolar novamente
-                uma quantidade qualquer de dados de dano em um ataque
-                que causa dano mágico.
-            </dd>
-        </dl>
+<body>
 
-        <h3>Habilidades de Classe</h3>
+    <header>
 
-        <p>
-            <strong>Sentido Arcano:</strong>
-            você pode sentir a presença de objetos e pessoas com magia
-            quando estão Próximos.
-        </p>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
-        <p>
-            <strong>Ilusão Menor:</strong>
-            faça um teste de conjuração (10).
-            Em um sucesso, você cria uma ilusão visual em alcance Próximo.
-            Ela não pode ultrapassar seu tamanho.
-            Essa ilusão parece convincente a qualquer um que esteja Próximo ou mais distante.
-        </p>
+            <div class="container">
 
-        <p>
-            <strong>Canalizar Poder Bruto:</strong>
-            uma vez por descanso longo, você pode colocar uma carta de domínio
-            de sua mão na reserva e escolher entre:
-        </p>
+                <a class="navbar-brand" href="../index.html">
+                    Daggerheart
+                </a>
 
-        <ul>
-            <li>Receber Esperança igual ao nível da carta.</li>
-            <li>
-                Aprimorar um feitiço que cause dano,
-                recebendo um bônus na rolagem de dano
-                igual ao dobro do nível da carta.
-            </li>
-        </ul>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <h3>Subclasses de Feiticeiro</h3>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
 
-        <article>
-            <h3>Elementalista</h3>
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../regras.html">
+                                Regras
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ancestralidades.html">
+                                Ancestralidades
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../comunidades.html">
+                                Comunidades
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Classes
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item" href="../classes.html">
+                                        Todas as classes
+                                    </a>
+                                </li>
+
+                                <li><hr class="dropdown-divider"></li>
+
+                                <li>
+                                    <a class="dropdown-item" href="bardo.html">
+                                        Bardo
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="cacador.html">
+                                        Caçador
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="druida.html">
+                                        Druida
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="feiticeiro.html">
+                                        Feiticeiro
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="guardiao.html">
+                                        Guardião
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="guerreiro.html">
+                                        Guerreiro
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="ladino.html">
+                                        Ladino
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="mago.html">
+                                        Mago
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="serafim.html">
+                                        Serafim
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+    <!-- FEITICEIRO -->
+        <section>
+            <h1>Feiticeiro</h1>
 
             <dl>
-                <dt>Atributo de Conjuração</dt>
-                <dd>Instinto</dd>
+                <dt>Domínios</dt>
+                <dd>Arcano e Meia-noite</dd>
+
+                <dt>Evasão inicial</dt>
+                <dd>10</dd>
+
+                <dt>Pontos de vida iniciais</dt>
+                <dd>6</dd>
+
+                <dt>Itens de classe</dt>
+                <dd>Um orbe sussurrante ou uma herança de família</dd>
+
+                <dt>Habilidade de Esperança</dt>
+                <dd>
+                    <strong>Magia Volátil:</strong>
+                    gaste 3 Pontos de Esperança para rolar novamente
+                    uma quantidade qualquer de dados de dano em um ataque
+                    que causa dano mágico.
+                </dd>
             </dl>
 
-            <h4>Habilidade Fundamental</h4>
+            <h3>Habilidades de Classe</h3>
 
             <p>
-                <strong>Elementalista:</strong>
-                escolha um dos seguintes elementos na criação de personagem:
-                água, ar, fogo, relâmpago, terra.
+                <strong>Sentido Arcano:</strong>
+                você pode sentir a presença de objetos e pessoas com magia
+                quando estão Próximos.
             </p>
 
             <p>
-                Você pode moldar esse elemento para causar efeitos inofensivos.
-                Além disso, ao gastar 1 Ponto de Esperança e descrever como seu controle
-                sobre esse elemento ajuda em um teste que você esteja prestes a fazer,
-                você recebe um bônus de +2 nesse teste
-                ou um bônus de +3 na rolagem de dano.
+                <strong>Ilusão Menor:</strong>
+                faça um teste de conjuração (10).
+                Em um sucesso, você cria uma ilusão visual em alcance Próximo.
+                Ela não pode ultrapassar seu tamanho.
+                Essa ilusão parece convincente a qualquer um que esteja Próximo ou mais distante.
             </p>
 
-            <h4>Habilidade de Especialização</h4>
-
             <p>
-                <strong>Evasão Natural:</strong>
-                você pode convocar seu elemento para se proteger.
-                Quando sofrer um ataque, você pode marcar 1 Ponto de Fadiga
-                e descrever como usa seu elemento para se defender.
-                Ao fazer isso, role 1d6 e some o resultado à sua Evasão contra esse ataque.
-            </p>
-
-            <h4>Habilidade de Maestria</h4>
-
-            <p>
-                <strong>Transcendência:</strong>
-                uma vez por descanso longo, você pode se transformar
-                em uma manifestação física de seu elemento.
-                Ao fazer isso, descreva sua transformação e escolha dois
-                dos benefícios abaixo para receber até seu próximo descanso:
+                <strong>Canalizar Poder Bruto:</strong>
+                uma vez por descanso longo, você pode colocar uma carta de domínio
+                de sua mão na reserva e escolher entre:
             </p>
 
             <ul>
-                <li>Bônus de +4 no seu limiar grave.</li>
-                <li>Bônus de +1 em um atributo à sua escolha.</li>
-                <li>Bônus de +1 em sua Proficiência.</li>
-                <li>Bônus de +2 na sua Evasão.</li>
-            </ul>
-        </article>
-
-        <article>
-            <h3>Primordialista</h3>
-
-            <dl>
-                <dt>Atributo de Conjuração</dt>
-                <dd>Instinto</dd>
-            </dl>
-
-            <h4>Habilidade Fundamental</h4>
-
-            <p>
-                <strong>Manipular Magia:</strong>
-                sua herança primordial permite que você altere a própria essência da magia.
-                Após conjurar um feitiço ou atacar com uma arma que causa dano mágico,
-                você pode marcar 1 Ponto de Fadiga para fazer um dos seguintes:
-            </p>
-
-            <ul>
-                <li>Estender o alcance do ataque ou feitiço em um passo.</li>
-                <li>Receber um bônus de +2 no resultado do teste.</li>
-                <li>Dobrar um dado de dano à sua escolha.</li>
-                <li>Acertar um alvo adicional dentro do alcance.</li>
+                <li>Receber Esperança igual ao nível da carta.</li>
+                <li>
+                    Aprimorar um feitiço que cause dano,
+                    recebendo um bônus na rolagem de dano
+                    igual ao dobro do nível da carta.
+                </li>
             </ul>
 
-            <h4>Habilidade de Especialização</h4>
+            <h3>Subclasses de Feiticeiro</h3>
 
-            <p>
-                <strong>Auxílio Encantado:</strong>
-                você pode aprimorar a magia alheia com sua essência.
-                Ao ajudar um aliado com um teste de conjuração,
-                você pode rolar 1d8 como seu dado de vantagem.
-            </p>
+            <article>
+                <h3>Elementalista</h3>
 
-            <p>
-                Uma vez por descanso longo, após um aliado fazer um teste de conjuração
-                com sua ajuda, você pode trocar os resultados dos Dados de Dualidade
-                dele um pelo outro.
-            </p>
+                <dl>
+                    <dt>Atributo de Conjuração</dt>
+                    <dd>Instinto</dd>
+                </dl>
 
-            <h4>Habilidade de Maestria</h4>
+                <h4>Habilidade Fundamental</h4>
 
-            <p>
-                <strong>Carga Arcana:</strong>
-                você pode reunir energia mágica para aprimorar suas capacidades.
-                Ao sofrer dano mágico, você fica Carregado.
-                Você também pode gastar 2 Pontos de Esperança para ficar Carregado.
-            </p>
+                <p>
+                    <strong>Elementalista:</strong>
+                    escolha um dos seguintes elementos na criação de personagem:
+                    água, ar, fogo, relâmpago, terra.
+                </p>
 
-            <p>
-                Enquanto estiver Carregado, ao acertar um ataque que causa dano mágico,
-                você pode zerar sua Carga para receber +10 de bônus na rolagem de dano
-                ou +3 de bônus na Dificuldade de um teste de reação
-                que o feitiço exija do alvo.
-            </p>
+                <p>
+                    Você pode moldar esse elemento para causar efeitos inofensivos.
+                    Além disso, ao gastar 1 Ponto de Esperança e descrever como seu controle
+                    sobre esse elemento ajuda em um teste que você esteja prestes a fazer,
+                    você recebe um bônus de +2 nesse teste
+                    ou um bônus de +3 na rolagem de dano.
+                </p>
 
-            <p>
-                Você deixa de estar Carregado em seu próximo descanso longo.
-            </p>
-        </article>
-    </section>
-</main>
+                <h4>Habilidade de Especialização</h4>
+
+                <p>
+                    <strong>Evasão Natural:</strong>
+                    você pode convocar seu elemento para se proteger.
+                    Quando sofrer um ataque, você pode marcar 1 Ponto de Fadiga
+                    e descrever como usa seu elemento para se defender.
+                    Ao fazer isso, role 1d6 e some o resultado à sua Evasão contra esse ataque.
+                </p>
+
+                <h4>Habilidade de Maestria</h4>
+
+                <p>
+                    <strong>Transcendência:</strong>
+                    uma vez por descanso longo, você pode se transformar
+                    em uma manifestação física de seu elemento.
+                    Ao fazer isso, descreva sua transformação e escolha dois
+                    dos benefícios abaixo para receber até seu próximo descanso:
+                </p>
+
+                <ul>
+                    <li>Bônus de +4 no seu limiar grave.</li>
+                    <li>Bônus de +1 em um atributo à sua escolha.</li>
+                    <li>Bônus de +1 em sua Proficiência.</li>
+                    <li>Bônus de +2 na sua Evasão.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Primordialista</h3>
+
+                <dl>
+                    <dt>Atributo de Conjuração</dt>
+                    <dd>Instinto</dd>
+                </dl>
+
+                <h4>Habilidade Fundamental</h4>
+
+                <p>
+                    <strong>Manipular Magia:</strong>
+                    sua herança primordial permite que você altere a própria essência da magia.
+                    Após conjurar um feitiço ou atacar com uma arma que causa dano mágico,
+                    você pode marcar 1 Ponto de Fadiga para fazer um dos seguintes:
+                </p>
+
+                <ul>
+                    <li>Estender o alcance do ataque ou feitiço em um passo.</li>
+                    <li>Receber um bônus de +2 no resultado do teste.</li>
+                    <li>Dobrar um dado de dano à sua escolha.</li>
+                    <li>Acertar um alvo adicional dentro do alcance.</li>
+                </ul>
+
+                <h4>Habilidade de Especialização</h4>
+
+                <p>
+                    <strong>Auxílio Encantado:</strong>
+                    você pode aprimorar a magia alheia com sua essência.
+                    Ao ajudar um aliado com um teste de conjuração,
+                    você pode rolar 1d8 como seu dado de vantagem.
+                </p>
+
+                <p>
+                    Uma vez por descanso longo, após um aliado fazer um teste de conjuração
+                    com sua ajuda, você pode trocar os resultados dos Dados de Dualidade
+                    dele um pelo outro.
+                </p>
+
+                <h4>Habilidade de Maestria</h4>
+
+                <p>
+                    <strong>Carga Arcana:</strong>
+                    você pode reunir energia mágica para aprimorar suas capacidades.
+                    Ao sofrer dano mágico, você fica Carregado.
+                    Você também pode gastar 2 Pontos de Esperança para ficar Carregado.
+                </p>
+
+                <p>
+                    Enquanto estiver Carregado, ao acertar um ataque que causa dano mágico,
+                    você pode zerar sua Carga para receber +10 de bônus na rolagem de dano
+                    ou +3 de bônus na Dificuldade de um teste de reação
+                    que o feitiço exija do alvo.
+                </p>
+
+                <p>
+                    Você deixa de estar Carregado em seu próximo descanso longo.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

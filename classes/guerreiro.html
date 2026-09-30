@@ -1,147 +1,319 @@
-<main>
-<!-- GUERREIRO -->
-    <section>
-        <h2>Guerreiro</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-        <dl>
-            <dt>Domínios</dt>
-            <dd>Falange e Lâmina</dd>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <dt>Evasão inicial</dt>
-            <dd>11</dd>
+    <title>Guerreiro - Daggerheart</title>
 
-            <dt>Pontos de vida iniciais</dt>
-            <dd>6</dd>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
-            <dt>Itens de classe</dt>
-            <dd>O desenho de alguém que ama ou uma pedra de amolar</dd>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
-            <dt>Habilidade de Esperança</dt>
-            <dd>
-                <strong>Sem Piedade:</strong>
-                gaste 3 Pontos de Esperança para receber um bônus de +1
-                em testes de ataque até seu próximo descanso.
-            </dd>
+<body>
 
-            <dt>Habilidade de Classe</dt>
-            <dd>
-                <strong>Ataque de Oportunidade:</strong>
-                se um adversário Corpo a Corpo tentar sair desse alcance,
-                faça um teste de reação usando um atributo à sua escolha
-                contra a Dificuldade dele.
-                Em um sucesso, escolha um efeito; em um sucesso crítico,
-                escolha dois:
-            </dd>
-        </dl>
 
-        <ul>
-            <li>Ele não pode sair de onde está.</li>
-            <li>Você causa dano a ele igual ao dano de sua arma principal.</li>
-            <li>Você se movimenta com ele.</li>
-        </ul>
+    <header>
 
-        <h3>Subclasses de Guerreiro</h3>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
-        <article>
-            <h3>Escolhido da Bravura</h3>
+            <div class="container">
 
-            <h4>Habilidades Fundamentais</h4>
+                <a class="navbar-brand" href="../index.html">
+                    Daggerheart
+                </a>
 
-            <p>
-                <strong>Coragem:</strong>
-                ao falhar com Medo, receba 1 Ponto de Esperança.
-            </p>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <p>
-                <strong>Ritual de Batalha:</strong>
-                uma vez por descanso longo, antes de tentar fazer algo
-                incrivelmente perigoso ou enfrentar um oponente claramente
-                superior a você, descreva o ritual e as preparações que você faz.
-                Após isso, recupere 2 Pontos de Fadiga e receba 2 Pontos de Esperança.
-            </p>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
 
-            <h4>Habilidade de Especialização</h4>
+                    <ul class="navbar-nav ms-auto">
 
-            <p>
-                <strong>Enfrentar o Desafio:</strong>
-                enquanto tiver 2 PV ou menos desmarcados,
-                você pode usar 1d20 como seu Dado de Esperança.
-            </p>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                Início
+                            </a>
+                        </li>
 
-            <h4>Habilidade de Maestria</h4>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../regras.html">
+                                Regras
+                            </a>
+                        </li>
 
-            <p>
-                <strong>Camaradagem:</strong>
-                sua bravura constante inspira seus aliados.
-                Você pode iniciar uma rolagem combinada adicional por sessão.
-                Além disso, quando um aliado inicia uma rolagem combinada com você,
-                ele só precisa gastar 2 Pontos de Esperança para fazer isso.
-            </p>
-        </article>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ancestralidades.html">
+                                Ancestralidades
+                            </a>
+                        </li>
 
-        <article>
-            <h3>Escolhido da Matança</h3>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../comunidades.html">
+                                Comunidades
+                            </a>
+                        </li>
 
-            <h4>Habilidades Fundamentais</h4>
+                        <li class="nav-item dropdown">
 
-            <p>
-                <strong>Treinamento de Combate:</strong>
-                você ignora o tipo de empunhadura de armas equipadas.
-                Ao causar dano físico, você recebe um bônus igual ao seu nível
-                na rolagem de dano.
-            </p>
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Classes
+                            </a>
 
-            <p>
-                <strong>Matança:</strong>
-                ao rolar com Esperança, você pode colocar 1d6 nesta carta
-                em vez de receber 1 Ponto de Esperança, adicionando esse dado
-                aos seus Dados de Matança.
-            </p>
+                            <ul class="dropdown-menu">
 
-            <p>
-                Ao fazer um teste de ataque ou uma rolagem de dano,
-                você pode gastar um número qualquer de Dados de Matança
-                e somar seus resultados à rolagem.
-            </p>
+                                <li>
+                                    <a class="dropdown-item" href="../classes.html">
+                                        Todas as classes
+                                    </a>
+                                </li>
 
-            <p>
-                No fim de cada sessão, Dados de Matança não utilizados são perdidos;
-                você ganha 1 Ponto de Esperança por cada dado perdido desta forma.
-            </p>
+                                <li><hr class="dropdown-divider"></li>
 
-            <h4>Habilidade de Especialização</h4>
+                                <li>
+                                    <a class="dropdown-item" href="bardo.html">
+                                        Bardo
+                                    </a>
+                                </li>
 
-            <p>
-                <strong>Especialista em Armas:</strong>
-                quando acerta um ataque, você pode gastar 1 Ponto de Esperança
-                para somar um dos dados de dano da sua arma secundária
-                à rolagem de dano.
-            </p>
+                                <li>
+                                    <a class="dropdown-item" href="cacador.html">
+                                        Caçador
+                                    </a>
+                                </li>
 
-            <p>
-                Além disso, uma vez por descanso longo,
-                role novamente quaisquer 1 que rolar nos seus Dados de Matança.
-            </p>
+                                <li>
+                                    <a class="dropdown-item" href="druida.html">
+                                        Druida
+                                    </a>
+                                </li>
 
-            <h4>Habilidade de Maestria</h4>
+                                <li>
+                                    <a class="dropdown-item" href="feiticeiro.html">
+                                        Feiticeiro
+                                    </a>
+                                </li>
 
-            <p>
-                <strong>Preparação Marcial:</strong>
-                seu grupo pode fazer uma Preparação Marcial em repouso.
-            </p>
+                                <li>
+                                    <a class="dropdown-item" href="guardiao.html">
+                                        Guardião
+                                    </a>
+                                </li>
 
-            <p>
-                Para usar este movimento em um descanso,
-                descreva como você instrui e treina o grupo.
-                Você, e cada aliado que fizer este movimento,
-                recebe 1d6 como Dado de Matança.
-            </p>
+                                <li>
+                                    <a class="dropdown-item" href="guerreiro.html">
+                                        Guerreiro
+                                    </a>
+                                </li>
 
-            <p>
-                Um personagem com um Dado de Matança pode gastá-lo
-                para somar seu resultado a um teste de ataque
-                ou rolagem de dano à escolha dele.
-            </p>
-        </article>
-    </section>
-</main>
+                                <li>
+                                    <a class="dropdown-item" href="ladino.html">
+                                        Ladino
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="mago.html">
+                                        Mago
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="serafim.html">
+                                        Serafim
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+    <!-- GUERREIRO -->
+        <section>
+            <h1>Guerreiro</h1>
+
+            <dl>
+                <dt>Domínios</dt>
+                <dd>Falange e Lâmina</dd>
+
+                <dt>Evasão inicial</dt>
+                <dd>11</dd>
+
+                <dt>Pontos de vida iniciais</dt>
+                <dd>6</dd>
+
+                <dt>Itens de classe</dt>
+                <dd>O desenho de alguém que ama ou uma pedra de amolar</dd>
+
+                <dt>Habilidade de Esperança</dt>
+                <dd>
+                    <strong>Sem Piedade:</strong>
+                    gaste 3 Pontos de Esperança para receber um bônus de +1
+                    em testes de ataque até seu próximo descanso.
+                </dd>
+
+                <dt>Habilidade de Classe</dt>
+                <dd>
+                    <strong>Ataque de Oportunidade:</strong>
+                    se um adversário Corpo a Corpo tentar sair desse alcance,
+                    faça um teste de reação usando um atributo à sua escolha
+                    contra a Dificuldade dele.
+                    Em um sucesso, escolha um efeito; em um sucesso crítico,
+                    escolha dois:
+                </dd>
+            </dl>
+
+            <ul>
+                <li>Ele não pode sair de onde está.</li>
+                <li>Você causa dano a ele igual ao dano de sua arma principal.</li>
+                <li>Você se movimenta com ele.</li>
+            </ul>
+
+            <h3>Subclasses de Guerreiro</h3>
+
+            <article>
+                <h3>Escolhido da Bravura</h3>
+
+                <h4>Habilidades Fundamentais</h4>
+
+                <p>
+                    <strong>Coragem:</strong>
+                    ao falhar com Medo, receba 1 Ponto de Esperança.
+                </p>
+
+                <p>
+                    <strong>Ritual de Batalha:</strong>
+                    uma vez por descanso longo, antes de tentar fazer algo
+                    incrivelmente perigoso ou enfrentar um oponente claramente
+                    superior a você, descreva o ritual e as preparações que você faz.
+                    Após isso, recupere 2 Pontos de Fadiga e receba 2 Pontos de Esperança.
+                </p>
+
+                <h4>Habilidade de Especialização</h4>
+
+                <p>
+                    <strong>Enfrentar o Desafio:</strong>
+                    enquanto tiver 2 PV ou menos desmarcados,
+                    você pode usar 1d20 como seu Dado de Esperança.
+                </p>
+
+                <h4>Habilidade de Maestria</h4>
+
+                <p>
+                    <strong>Camaradagem:</strong>
+                    sua bravura constante inspira seus aliados.
+                    Você pode iniciar uma rolagem combinada adicional por sessão.
+                    Além disso, quando um aliado inicia uma rolagem combinada com você,
+                    ele só precisa gastar 2 Pontos de Esperança para fazer isso.
+                </p>
+            </article>
+
+            <article>
+                <h3>Escolhido da Matança</h3>
+
+                <h4>Habilidades Fundamentais</h4>
+
+                <p>
+                    <strong>Treinamento de Combate:</strong>
+                    você ignora o tipo de empunhadura de armas equipadas.
+                    Ao causar dano físico, você recebe um bônus igual ao seu nível
+                    na rolagem de dano.
+                </p>
+
+                <p>
+                    <strong>Matança:</strong>
+                    ao rolar com Esperança, você pode colocar 1d6 nesta carta
+                    em vez de receber 1 Ponto de Esperança, adicionando esse dado
+                    aos seus Dados de Matança.
+                </p>
+
+                <p>
+                    Ao fazer um teste de ataque ou uma rolagem de dano,
+                    você pode gastar um número qualquer de Dados de Matança
+                    e somar seus resultados à rolagem.
+                </p>
+
+                <p>
+                    No fim de cada sessão, Dados de Matança não utilizados são perdidos;
+                    você ganha 1 Ponto de Esperança por cada dado perdido desta forma.
+                </p>
+
+                <h4>Habilidade de Especialização</h4>
+
+                <p>
+                    <strong>Especialista em Armas:</strong>
+                    quando acerta um ataque, você pode gastar 1 Ponto de Esperança
+                    para somar um dos dados de dano da sua arma secundária
+                    à rolagem de dano.
+                </p>
+
+                <p>
+                    Além disso, uma vez por descanso longo,
+                    role novamente quaisquer 1 que rolar nos seus Dados de Matança.
+                </p>
+
+                <h4>Habilidade de Maestria</h4>
+
+                <p>
+                    <strong>Preparação Marcial:</strong>
+                    seu grupo pode fazer uma Preparação Marcial em repouso.
+                </p>
+
+                <p>
+                    Para usar este movimento em um descanso,
+                    descreva como você instrui e treina o grupo.
+                    Você, e cada aliado que fizer este movimento,
+                    recebe 1d6 como Dado de Matança.
+                </p>
+
+                <p>
+                    Um personagem com um Dado de Matança pode gastá-lo
+                    para somar seu resultado a um teste de ataque
+                    ou rolagem de dano à escolha dele.
+                </p>
+            </article>
+        </section>
+    </main>
+
+   <footer>
+        <!-- Rodapé -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,143 +1,313 @@
-<main>
-<!-- GUARDIÃO -->
-    <section>
-        <h2>Guardião</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-        <dl>
-            <dt>Domínios</dt>
-            <dd>Valor e Lâmina</dd>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <dt>Evasão inicial</dt>
-            <dd>9</dd>
+    <title>Guardião - Daggerheart</title>
 
-            <dt>Pontos de vida iniciais</dt>
-            <dd>7</dd>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
-            <dt>Itens de classe</dt>
-            <dd>Um totem de seu mentor ou uma chave secreta</dd>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
-            <dt>Habilidade de Esperança</dt>
-            <dd>
-                <strong>Linha de Frente:</strong>
-                gaste 3 Pontos de Esperança para recuperar 2 Pontos de Armadura.
-            </dd>
-        </dl>
+<body>
 
-        <h3>Habilidade de Classe</h3>
+    <header>
 
-        <p>
-            <strong>Determinação:</strong>
-            uma vez por descanso longo, você pode ficar Determinado,
-            recebendo um Dado de Determinação.
-            No 1º nível, seu Dado de Determinação é d4.
-            Coloque-o sobre o espaço apropriado na ficha de personagem,
-            começando com o número 1 voltado para cima.
-        </p>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
-        <p>
-            Após fazer uma rolagem de dano que tira 1 ou mais Pontos de Vida de um alvo,
-            aumente o valor do Dado de Determinação em +1.
-            No momento em que o dado for ultrapassar seu valor máximo,
-            ou quando a cena acabar, remova-o e encerre sua Determinação.
-            No 5º nível, seu Dado de Determinação aumenta para d6.
-        </p>
+            <div class="container">
 
-        <p>Enquanto estiver determinado:</p>
+                <a class="navbar-brand" href="../index.html">
+                    Daggerheart
+                </a>
 
-        <ul>
-            <li>Você reduz a gravidade do dano físico em uma categoria.</li>
-            <li>
-                Você soma o valor atual do Dado de Determinação
-                às suas rolagens de dano.
-            </li>
-            <li>Você não pode ser Imobilizado ou ficar Vulnerável.</li>
-        </ul>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <h3>Subclasses de Guardião</h3>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
 
-        <article>
-            <h3>Baluarte</h3>
+                    <ul class="navbar-nav ms-auto">
 
-            <h4>Habilidades Fundamentais</h4>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../regras.html">
+                                Regras
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ancestralidades.html">
+                                Ancestralidades
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../comunidades.html">
+                                Comunidades
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Classes
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item" href="../classes.html">
+                                        Todas as classes
+                                    </a>
+                                </li>
+
+                                <li><hr class="dropdown-divider"></li>
+
+                                <li>
+                                    <a class="dropdown-item" href="bardo.html">
+                                        Bardo
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="cacador.html">
+                                        Caçador
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="druida.html">
+                                        Druida
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="feiticeiro.html">
+                                        Feiticeiro
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="guardiao.html">
+                                        Guardião
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="guerreiro.html">
+                                        Guerreiro
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="ladino.html">
+                                        Ladino
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="mago.html">
+                                        Mago
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="serafim.html">
+                                        Serafim
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+    <!-- GUARDIÃO -->
+        <section>
+            <h1>Guardião</h1>
+
+            <dl>
+                <dt>Domínios</dt>
+                <dd>Valor e Lâmina</dd>
+
+                <dt>Evasão inicial</dt>
+                <dd>9</dd>
+
+                <dt>Pontos de vida iniciais</dt>
+                <dd>7</dd>
+
+                <dt>Itens de classe</dt>
+                <dd>Um totem de seu mentor ou uma chave secreta</dd>
+
+                <dt>Habilidade de Esperança</dt>
+                <dd>
+                    <strong>Linha de Frente:</strong>
+                    gaste 3 Pontos de Esperança para recuperar 2 Pontos de Armadura.
+                </dd>
+            </dl>
+
+            <h3>Habilidade de Classe</h3>
 
             <p>
-                <strong>Resoluto:</strong>
-                você recebe um bônus permanente de +1 em seus limiares de dano.
+                <strong>Determinação:</strong>
+                uma vez por descanso longo, você pode ficar Determinado,
+                recebendo um Dado de Determinação.
+                No 1º nível, seu Dado de Determinação é d4.
+                Coloque-o sobre o espaço apropriado na ficha de personagem,
+                começando com o número 1 voltado para cima.
             </p>
 
             <p>
-                <strong>Vontade de Ferro:</strong>
-                ao sofrer dano físico, você pode marcar 1 Ponto de Armadura adicional
-                para reduzir a gravidade.
+                Após fazer uma rolagem de dano que tira 1 ou mais Pontos de Vida de um alvo,
+                aumente o valor do Dado de Determinação em +1.
+                No momento em que o dado for ultrapassar seu valor máximo,
+                ou quando a cena acabar, remova-o e encerre sua Determinação.
+                No 5º nível, seu Dado de Determinação aumenta para d6.
             </p>
 
-            <h4>Habilidades de Especialização</h4>
+            <p>Enquanto estiver determinado:</p>
 
-            <p>
-                <strong>Irrefreável:</strong>
-                você recebe um bônus permanente de +2 em seus limiares de dano.
-            </p>
+            <ul>
+                <li>Você reduz a gravidade do dano físico em uma categoria.</li>
+                <li>
+                    Você soma o valor atual do Dado de Determinação
+                    às suas rolagens de dano.
+                </li>
+                <li>Você não pode ser Imobilizado ou ficar Vulnerável.</li>
+            </ul>
 
-            <p>
-                <strong>Irmãos de Armas:</strong>
-                quando um aliado Muito Próximo sofrer dano físico,
-                você pode marcar 1 Ponto de Armadura para reduzir
-                a gravidade em um limiar.
-            </p>
+            <h3>Subclasses de Guardião</h3>
 
-            <h4>Habilidades de Maestria</h4>
+            <article>
+                <h3>Baluarte</h3>
 
-            <p>
-                <strong>Impávido:</strong>
-                você recebe um bônus permanente de +3 em seus limiares de dano.
-            </p>
+                <h4>Habilidades Fundamentais</h4>
 
-            <p>
-                <strong>Protetor Leal:</strong>
-                quando um aliado Próximo tiver 2 PV ou menos e for sofrer dano,
-                você pode marcar 1 Ponto de Fadiga para tomar sua frente
-                e receber o dano em seu lugar.
-            </p>
-        </article>
+                <p>
+                    <strong>Resoluto:</strong>
+                    você recebe um bônus permanente de +1 em seus limiares de dano.
+                </p>
 
-        <article>
-            <h3>Vingador</h3>
+                <p>
+                    <strong>Vontade de Ferro:</strong>
+                    ao sofrer dano físico, você pode marcar 1 Ponto de Armadura adicional
+                    para reduzir a gravidade.
+                </p>
 
-            <h4>Habilidades Fundamentais</h4>
+                <h4>Habilidades de Especialização</h4>
 
-            <p>
-                <strong>Vem Tranquilo:</strong>
-                receba 1 Ponto de Fadiga adicional.
-            </p>
+                <p>
+                    <strong>Irrefreável:</strong>
+                    você recebe um bônus permanente de +2 em seus limiares de dano.
+                </p>
 
-            <p>
-                <strong>Revanche:</strong>
-                quando um adversário Corpo a Corpo acerta um ataque contra você,
-                você pode marcar 1 Ponto de Fadiga para forçá-lo a marcar 1 Ponto de Vida.
-            </p>
+                <p>
+                    <strong>Irmãos de Armas:</strong>
+                    quando um aliado Muito Próximo sofrer dano físico,
+                    você pode marcar 1 Ponto de Armadura para reduzir
+                    a gravidade em um limiar.
+                </p>
 
-            <h4>Habilidade de Especialização</h4>
+                <h4>Habilidades de Maestria</h4>
 
-            <p>
-                <strong>Represália:</strong>
-                quando um adversário causar dano a um aliado Corpo a Corpo,
-                você recebe um bônus de +1 em Proficiência
-                no próximo ataque que acertar contra ele.
-            </p>
+                <p>
+                    <strong>Impávido:</strong>
+                    você recebe um bônus permanente de +3 em seus limiares de dano.
+                </p>
 
-            <h4>Habilidade de Maestria</h4>
+                <p>
+                    <strong>Protetor Leal:</strong>
+                    quando um aliado Próximo tiver 2 PV ou menos e for sofrer dano,
+                    você pode marcar 1 Ponto de Fadiga para tomar sua frente
+                    e receber o dano em seu lugar.
+                </p>
+            </article>
 
-            <p>
-                <strong>Nêmesis:</strong>
-                gaste 2 Pontos de Esperança para priorizar um adversário
-                até seu próximo descanso.
-            </p>
+            <article>
+                <h3>Vingador</h3>
 
-            <p>
-                Ao atacar um adversário priorizado,
-                você pode trocar os resultados dos dados de Esperança e Medo um pelo outro.
-                Você só pode priorizar um adversário por vez.
-            </p>
-        </article>
-    </section>
-</main>
+                <h4>Habilidades Fundamentais</h4>
+
+                <p>
+                    <strong>Vem Tranquilo:</strong>
+                    receba 1 Ponto de Fadiga adicional.
+                </p>
+
+                <p>
+                    <strong>Revanche:</strong>
+                    quando um adversário Corpo a Corpo acerta um ataque contra você,
+                    você pode marcar 1 Ponto de Fadiga para forçá-lo a marcar 1 Ponto de Vida.
+                </p>
+
+                <h4>Habilidade de Especialização</h4>
+
+                <p>
+                    <strong>Represália:</strong>
+                    quando um adversário causar dano a um aliado Corpo a Corpo,
+                    você recebe um bônus de +1 em Proficiência
+                    no próximo ataque que acertar contra ele.
+                </p>
+
+                <h4>Habilidade de Maestria</h4>
+
+                <p>
+                    <strong>Nêmesis:</strong>
+                    gaste 2 Pontos de Esperança para priorizar um adversário
+                    até seu próximo descanso.
+                </p>
+
+                <p>
+                    Ao atacar um adversário priorizado,
+                    você pode trocar os resultados dos dados de Esperança e Medo um pelo outro.
+                    Você só pode priorizar um adversário por vez.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
