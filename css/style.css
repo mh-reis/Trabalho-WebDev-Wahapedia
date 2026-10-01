@@ -1,19 +1,10 @@
-/* ==============================
-   CONFIGURAÇÕES GERAIS
-   ============================== */
-
 body {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
     background-color: #f4f1ea;
     color: #2b2926;
+    font-family: Georgia, "Times New Roman", serif;
     line-height: 1.7;
 }
-
-
-/* ==============================
-   CONTEÚDO PRINCIPAL
-   ============================== */
 
 main {
     max-width: 1100px;
@@ -21,10 +12,124 @@ main {
     padding: 60px 20px;
 }
 
+
+/* =========================
+   HERO
+   ========================= */
+
 .hero {
     text-align: center;
-    padding: 40px 20px 80px;
+    padding: 40px 20px 70px;
 }
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+}
+
+/* Apresentação da classe */
+.classe-hero {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.classe-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+/* Informações da classe */
+.classe-info {
+    display: grid;
+    grid-template-columns: minmax(150px, 220px) 1fr;
+    gap: 10px 20px;
+    margin-bottom: 0;
+}
+
+.classe-info dt {
+    font-weight: bold;
+}
+
+.classe-info dd {
+    margin-bottom: 12px;
+}
+
+/* Seção de subclasses */
+.classe-section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.classe-section>h2 {
+    margin-bottom: 25px;
+}
+
+/* Cada subclasse */
+.subclasse {
+    padding: 25px;
+    margin-top: 20px;
+    background-color: #f4f1ea;
+    border-radius: 10px;
+}
+
+.subclasse h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.subclasse h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.subclasse ul {
+    padding-left: 25px;
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+
+    .classe-hero,
+    .classe-section {
+        padding: 20px;
+    }
+
+    .classe-hero h1 {
+        font-size: 2rem;
+    }
+
+    .classe-info {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .classe-info dd {
+        margin-bottom: 12px;
+    }
+
+    .subclasse {
+        padding: 18px;
+    }
+}
+
+
+
+
+/* =========================
+   SEÇÕES
+   ========================= */
 
 .content-section {
     background-color: white;
@@ -33,59 +138,149 @@ main {
     border-radius: 12px;
 }
 
-
-/* ==============================
-   TÍTULOS
-   ============================== */
-
-h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-size: 2rem;
+.content-section h2 {
     margin-bottom: 20px;
 }
 
-h3 {
-    font-size: 1.5rem;
+/* =========================
+PÁGINA DE CLASSES
+========================= */
+.classes-section {
+    padding-bottom: 60px;
+}
+
+.class-card {
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.class-card h2 {
+    margin-bottom: 15px;
+}
+
+.class-card p {
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.class-card .btn {
+    align-self: flex-start;
+}
+
+/* =========================
+    ANCESTRALIDADES
+    ========================= */
+
+.ancestralidade {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ancestralidade h2 {
+    margin-bottom: 20px;
+}
+
+.ancestralidade h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.ancestralidade p {
+    margin-bottom: 15px;
+}
+
+.ancestralidade ul {
+    padding-left: 25px;
+}
+
+/* =========================
+    COMUNIDADES
+    ========================= */
+
+.comunidade {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.comunidade h2 {
+    margin-bottom: 20px;
+}
+
+.comunidade h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.comunidade p {
+    margin-bottom: 15px;
+}
+
+.comunidade ul {
+    padding-left: 25px;
 }
 
 
-/* ==============================
-   SEÇÕES
-   ============================== */
 
-main section {
-    margin-bottom: 60px;
-}
-
-main section p {
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* ==============================
+/* =========================
    NAVBAR
-   ============================== */
+   ========================= */
 
 .navbar-brand {
-    font-family: Georgia, "Times New Roman", serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 
-/* ==============================
+/* =========================
    FOOTER
-   ============================== */
+   ========================= */
 
 footer {
-    margin-top: 40px;
-    padding: 30px;
     text-align: center;
+    padding: 30px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        padding: 30px 10px 50px;
+    }
+
+    .content-section {
+        padding: 25px;
+    }
+
 }

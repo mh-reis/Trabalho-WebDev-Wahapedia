@@ -7,10 +7,7 @@
 
     <title>Druida - Daggerheart</title>
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -27,15 +24,8 @@
                     Daggerheart
                 </a>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menuPrincipal"
-                    aria-controls="menuPrincipal"
-                    aria-expanded="false"
-                    aria-label="Abrir menu"
-                >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -69,13 +59,8 @@
 
                         <li class="nav-item dropdown">
 
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Classes
                             </a>
 
@@ -87,7 +72,9 @@
                                     </a>
                                 </li>
 
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
 
                                 <li>
                                     <a class="dropdown-item" href="bardo.html">
@@ -158,236 +145,257 @@
     </header>
 
 
+
     <main>
 
-        <section>
+        <section class="classe-hero">
             <h1>Druida</h1>
 
-        <dl>
-            <dt>Domínios</dt>
-            <dd>Arcano e Sabedoria</dd>
+            <dl class="classe-info">
+                <dt>Domínios</dt>
+                <dd>Arcano e Sabedoria</dd>
 
-            <dt>Evasão inicial</dt>
-            <dd>10</dd>
+                <dt>Evasão inicial</dt>
+                <dd>10</dd>
 
-            <dt>Pontos de vida iniciais</dt>
-            <dd>6</dd>
+                <dt>Pontos de vida iniciais</dt>
+                <dd>6</dd>
 
-            <dt>Itens de classe</dt>
-            <dd>
-                Uma pequena bolsa com ossos e pedras
-                ou um estranho pingente encontrado na terra
-            </dd>
+                <dt>Itens de classe</dt>
+                <dd>
+                    Uma pequena bolsa com ossos e pedras
+                    ou um estranho pingente encontrado na terra
+                </dd>
 
-            <dt>Habilidade de Esperança</dt>
-            <dd>
-                <strong>Evolução:</strong>
-                gaste 3 Pontos de Esperança para usar Forma de Fera sem marcar Fadiga.
-                Ao fazer isso, aumente um atributo em +1 até sair da Forma de Fera.
-            </dd>
-        </dl>
-
-        <h3>Habilidades de Classe</h3>
-
-        <p>
-            <strong>Forma de Fera:</strong>
-            marque 1 Ponto de Fadiga para se transformar magicamente em uma criatura
-            de patamar igual ou menor que o seu na lista de Formas de Fera.
-            Você pode sair dessa forma a qualquer momento.
-        </p>
-
-        <p>
-            Enquanto estiver transformado, você não pode usar armas ou feitiços
-            das cartas de domínio, mas ainda pode usar outras habilidades ou talentos
-            aos quais tenha acesso.
-            Os feitiços conjurados antes da transformação permanecem ativos,
-            com sua duração normal, e você pode falar e se comunicar normalmente.
-        </p>
-
-        <p>
-            Além disso, você recebe as habilidades da Forma de Fera escolhida,
-            soma o bônus de Evasão dela à sua Evasão e usa o atributo especificado
-            nas estatísticas dela para atacar.
-        </p>
-
-        <p>
-            Enquanto estiver na Forma de Fera, sua armadura se torna parte de seu corpo
-            e você marca Pontos de Armadura normalmente;
-            quando sai da Forma de Fera, esses Pontos de Armadura permanecem marcados.
-            Marcar seu último Ponto de Vida faz com que você saia da Forma de Fera automaticamente.
-        </p>
-
-        <p>
-            <strong>Dádiva da Natureza:</strong>
-            você pode criar à vontade efeitos inofensivos e sutis envolvendo a natureza,
-            como fazer com que uma flor cresça rapidamente, invocar uma brisa
-            ou acender uma fogueira.
-        </p>
-
-        <h3>Subclasses de Druida</h3>
-
-        <article>
-            <h3>Protetor dos Elementos</h3>
-
-            <dl>
-                <dt>Atributo de Conjuração</dt>
-                <dd>Instinto</dd>
+                <dt>Habilidade de Esperança</dt>
+                <dd>
+                    <strong>Evolução:</strong>
+                    gaste 3 Pontos de Esperança para usar Forma de Fera sem marcar Fadiga.
+                    Ao fazer isso, aumente um atributo em +1 até sair da Forma de Fera.
+                </dd>
             </dl>
+        </section>
 
-            <h4>Habilidade Fundamental</h4>
+        <section class="classe-section">
 
-            <p>
-                <strong>Encarnação Elemental:</strong>
-                marque 1 Ponto de Fadiga para canalizar um dos seguintes elementos
-                até sofrer dano grave ou até seu próximo descanso:
-            </p>
-
-            <ul>
-                <li>
-                    <strong>Água:</strong>
-                    quando você causa dano a um adversário Corpo a Corpo,
-                    todos os outros adversários Muito Próximos devem marcar
-                    1 Ponto de Fadiga.
-                </li>
-                <li>
-                    <strong>Ar:</strong>
-                    você pode pairar para receber vantagem em testes de Agilidade.
-                </li>
-                <li>
-                    <strong>Fogo:</strong>
-                    quando um adversário Corpo a Corpo causa dano a você,
-                    ele sofre 1d10 pontos de dano mágico.
-                </li>
-                <li>
-                    <strong>Terra:</strong>
-                    você recebe um bônus igual à sua Proficiência
-                    em todos os seus limiares de dano.
-                </li>
-            </ul>
-
-            <h4>Habilidade de Especialização</h4>
+            <h2>Habilidades de Classe</h2>
 
             <p>
-                <strong>Aura Elemental:</strong>
-                uma vez por descanso, enquanto estiver canalizando,
-                você pode manifestar uma aura correspondente ao seu elemento.
-                Ela afeta alvos Próximos até o fim da sua canalização.
-            </p>
-
-            <ul>
-                <li>
-                    <strong>Água:</strong>
-                    quando um adversário causa dano a você,
-                    você pode marcar 1 Ponto de Fadiga para movê-lo
-                    para qualquer ponto Muito Próximo de onde ele está.
-                </li>
-                <li>
-                    <strong>Ar:</strong>
-                    quando você ou um aliado sofre dano de um ataque
-                    oriundo de fora do alcance Próximo, reduza esse dano em –1d8.
-                </li>
-                <li>
-                    <strong>Fogo:</strong>
-                    quando um adversário marca 1 ou mais Pontos de Vida,
-                    ele também deve marcar 1 Ponto de Fadiga.
-                </li>
-                <li>
-                    <strong>Terra:</strong>
-                    seus aliados recebem um bônus de +1 em Força.
-                </li>
-            </ul>
-
-            <h4>Habilidade de Maestria</h4>
-
-            <p>
-                <strong>Soberania Elemental:</strong>
-                você incorpora seu elemento ainda mais.
-                Enquanto estiver canalizando, você recebe o seguinte benefício:
-            </p>
-
-            <ul>
-                <li>
-                    <strong>Água:</strong>
-                    quando um ataque contra você é bem-sucedido,
-                    você pode marcar 1 Ponto de Fadiga para deixar o atacante
-                    temporariamente Vulnerável.
-                </li>
-                <li>
-                    <strong>Ar:</strong>
-                    você recebe um bônus de +1 na Evasão e pode voar.
-                </li>
-                <li>
-                    <strong>Fogo:</strong>
-                    você recebe um bônus de +1 em sua Proficiência
-                    para ataques e feitiços que causam dano.
-                </li>
-                <li>
-                    <strong>Terra:</strong>
-                    quando for marcar Pontos de Vida, role 1d6
-                    para cada Ponto de Vida a ser marcado.
-                    A cada 6 que você rolar,
-                    reduza o número de PV marcados em –1.
-                </li>
-            </ul>
-        </article>
-
-        <article>
-            <h3>Protetor da Renovação</h3>
-
-            <dl>
-                <dt>Atributo de Conjuração</dt>
-                <dd>Instinto</dd>
-            </dl>
-
-            <h4>Habilidades Fundamentais</h4>
-
-            <p>
-                <strong>Serenidade da Natureza:</strong>
-                uma vez por descanso longo, você pode criar um espaço de serenidade natural
-                em alcance Próximo.
-                Ao gastar alguns minutos descansando no espaço,
-                recupere Fadiga do grupo, distribuído entre você e seus aliados à sua escolha,
-                em um número igual ao seu Instinto.
+                <strong>Forma de Fera:</strong>
+                marque 1 Ponto de Fadiga para se transformar magicamente em uma criatura
+                de patamar igual ou menor que o seu na lista de Formas de Fera.
+                Você pode sair dessa forma a qualquer momento.
             </p>
 
             <p>
-                <strong>Regeneração:</strong>
-                toque uma criatura e gaste 3 Pontos de Esperança.
-                Ela recupera 1d4 Pontos de Vida.
-            </p>
-
-            <h4>Habilidade de Especialização</h4>
-
-            <p>
-                <strong>Presença Curativa:</strong>
-                você pode selecionar criaturas Muito Próximas como alvo de sua Regeneração.
-            </p>
-
-            <h4>Habilidade de Maestria</h4>
-
-            <p>
-                <strong>Proteção Druídica:</strong>
-                uma vez por descanso longo, gaste 2 Pontos de Esperança
-                para recuperar 2 PV de 1d4 aliados Próximos.
+                Enquanto estiver transformado, você não pode usar armas ou feitiços
+                das cartas de domínio, mas ainda pode usar outras habilidades ou talentos
+                aos quais tenha acesso.
+                Os feitiços conjurados antes da transformação permanecem ativos,
+                com sua duração normal, e você pode falar e se comunicar normalmente.
             </p>
 
             <p>
-                <strong>Defensor:</strong>
-                sua transformação animal incorpora um espírito curativo protetor.
-                Quando você está em Forma de Fera e um aliado Próximo marca
-                2 ou mais Pontos de Vida, você pode marcar 1 Ponto de Fadiga
-                para reduzir o número de PV marcados por esse aliado em –1.
+                Além disso, você recebe as habilidades da Forma de Fera escolhida,
+                soma o bônus de Evasão dela à sua Evasão e usa o atributo especificado
+                nas estatísticas dela para atacar.
             </p>
-        </article>
-    </section>
+
+            <p>
+                Enquanto estiver na Forma de Fera, sua armadura se torna parte de seu corpo
+                e você marca Pontos de Armadura normalmente;
+                quando sai da Forma de Fera, esses Pontos de Armadura permanecem marcados.
+                Marcar seu último Ponto de Vida faz com que você saia da Forma de Fera automaticamente.
+            </p>
+
+            <p>
+                <strong>Dádiva da Natureza:</strong>
+                você pode criar à vontade efeitos inofensivos e sutis envolvendo a natureza,
+                como fazer com que uma flor cresça rapidamente, invocar uma brisa
+                ou acender uma fogueira.
+            </p>
+
+        </section>
+
+        <section class="classe-section">
+
+            <h2>Subclasses de Druida</h2>
+
+            <article class="subclasse">
+                <h3>Protetor dos Elementos</h3>
+
+                <dl class="classe-info">
+                    <dt>Atributo de Conjuração</dt>
+                    <dd>Instinto</dd>
+                </dl>
+
+                <h4>Habilidade Fundamental</h4>
+
+                <p>
+                    <strong>Encarnação Elemental:</strong>
+                    marque 1 Ponto de Fadiga para canalizar um dos seguintes elementos
+                    até sofrer dano grave ou até seu próximo descanso:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Água:</strong>
+                        quando você causa dano a um adversário Corpo a Corpo,
+                        todos os outros adversários Muito Próximos devem marcar
+                        1 Ponto de Fadiga.
+                    </li>
+
+                    <li>
+                        <strong>Ar:</strong>
+                        você pode pairar para receber vantagem em testes de Agilidade.
+                    </li>
+
+                    <li>
+                        <strong>Fogo:</strong>
+                        quando um adversário Corpo a Corpo causa dano a você,
+                        ele sofre 1d10 pontos de dano mágico.
+                    </li>
+
+                    <li>
+                        <strong>Terra:</strong>
+                        você recebe um bônus igual à sua Proficiência
+                        em todos os seus limiares de dano.
+                    </li>
+                </ul>
+
+                <h4>Habilidade de Especialização</h4>
+
+                <p>
+                    <strong>Aura Elemental:</strong>
+                    uma vez por descanso, enquanto estiver canalizando,
+                    você pode manifestar uma aura correspondente ao seu elemento.
+                    Ela afeta alvos Próximos até o fim da sua canalização.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Água:</strong>
+                        quando um adversário causa dano a você,
+                        você pode marcar 1 Ponto de Fadiga para movê-lo
+                        para qualquer ponto Muito Próximo de onde ele está.
+                    </li>
+
+                    <li>
+                        <strong>Ar:</strong>
+                        quando você ou um aliado sofre dano de um ataque
+                        oriundo de fora do alcance Próximo, reduza esse dano em –1d8.
+                    </li>
+
+                    <li>
+                        <strong>Fogo:</strong>
+                        quando um adversário marca 1 ou mais Pontos de Vida,
+                        ele também deve marcar 1 Ponto de Fadiga.
+                    </li>
+
+                    <li>
+                        <strong>Terra:</strong>
+                        seus aliados recebem um bônus de +1 em Força.
+                    </li>
+                </ul>
+
+                <h4>Habilidade de Maestria</h4>
+
+                <p>
+                    <strong>Soberania Elemental:</strong>
+                    você incorpora seu elemento ainda mais.
+                    Enquanto estiver canalizando, você recebe o seguinte benefício:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Água:</strong>
+                        quando um ataque contra você é bem-sucedido,
+                        você pode marcar 1 Ponto de Fadiga para deixar o atacante
+                        temporariamente Vulnerável.
+                    </li>
+
+                    <li>
+                        <strong>Ar:</strong>
+                        você recebe um bônus de +1 na Evasão e pode voar.
+                    </li>
+
+                    <li>
+                        <strong>Fogo:</strong>
+                        você recebe um bônus de +1 em sua Proficiência
+                        para ataques e feitiços que causam dano.
+                    </li>
+
+                    <li>
+                        <strong>Terra:</strong>
+                        quando for marcar Pontos de Vida, role 1d6
+                        para cada Ponto de Vida a ser marcado.
+                        A cada 6 que você rolar,
+                        reduza o número de PV marcados em –1.
+                    </li>
+                </ul>
+            </article>
+
+            <article class="subclasse">
+                <h3>Protetor da Renovação</h3>
+
+                <dl class="classe-info">
+                    <dt>Atributo de Conjuração</dt>
+                    <dd>Instinto</dd>
+                </dl>
+
+                <h4>Habilidades Fundamentais</h4>
+
+                <p>
+                    <strong>Serenidade da Natureza:</strong>
+                    uma vez por descanso longo, você pode criar um espaço de serenidade natural
+                    em alcance Próximo.
+                    Ao gastar alguns minutos descansando no espaço,
+                    recupere Fadiga do grupo, distribuído entre você e seus aliados à sua escolha,
+                    em um número igual ao seu Instinto.
+                </p>
+
+                <p>
+                    <strong>Regeneração:</strong>
+                    toque uma criatura e gaste 3 Pontos de Esperança.
+                    Ela recupera 1d4 Pontos de Vida.
+                </p>
+
+                <h4>Habilidade de Especialização</h4>
+
+                <p>
+                    <strong>Presença Curativa:</strong>
+                    você pode selecionar criaturas Muito Próximas como alvo de sua Regeneração.
+                </p>
+
+                <h4>Habilidade de Maestria</h4>
+
+                <p>
+                    <strong>Proteção Druídica:</strong>
+                    uma vez por descanso longo, gaste 2 Pontos de Esperança
+                    para recuperar 2 PV de 1d4 aliados Próximos.
+                </p>
+
+                <p>
+                    <strong>Defensor:</strong>
+                    sua transformação animal incorpora um espírito curativo protetor.
+                    Quando você está em Forma de Fera e um aliado Próximo marca
+                    2 ou mais Pontos de Vida, você pode marcar 1 Ponto de Fadiga
+                    para reduzir o número de PV marcados por esse aliado em –1.
+                </p>
+            </article>
+
+        </section>
 
     </main>
+
+
 
     <footer>
         <!-- Rodapé -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

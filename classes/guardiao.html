@@ -7,10 +7,7 @@
 
     <title>Guardião - Daggerheart</title>
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -27,15 +24,8 @@
                     Daggerheart
                 </a>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menuPrincipal"
-                    aria-controls="menuPrincipal"
-                    aria-expanded="false"
-                    aria-label="Abrir menu"
-                >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -69,13 +59,8 @@
 
                         <li class="nav-item dropdown">
 
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Classes
                             </a>
 
@@ -87,7 +72,9 @@
                                     </a>
                                 </li>
 
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
 
                                 <li>
                                     <a class="dropdown-item" href="bardo.html">
@@ -159,11 +146,12 @@
 
 
     <main>
-    <!-- GUARDIÃO -->
-        <section>
+
+        <!-- GUARDIÃO -->
+        <section class="classe-hero">
             <h1>Guardião</h1>
 
-            <dl>
+            <dl class="classe-info">
                 <dt>Domínios</dt>
                 <dd>Valor e Lâmina</dd>
 
@@ -182,8 +170,11 @@
                     gaste 3 Pontos de Esperança para recuperar 2 Pontos de Armadura.
                 </dd>
             </dl>
+        </section>
 
-            <h3>Habilidade de Classe</h3>
+        <section class="classe-section">
+
+            <h2>Habilidade de Classe</h2>
 
             <p>
                 <strong>Determinação:</strong>
@@ -213,9 +204,13 @@
                 <li>Você não pode ser Imobilizado ou ficar Vulnerável.</li>
             </ul>
 
-            <h3>Subclasses de Guardião</h3>
+        </section>
 
-            <article>
+        <section class="classe-section">
+
+            <h2>Subclasses de Guardião</h2>
+
+            <article class="subclasse">
                 <h3>Baluarte</h3>
 
                 <h4>Habilidades Fundamentais</h4>
@@ -260,7 +255,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="subclasse">
                 <h3>Vingador</h3>
 
                 <h4>Habilidades Fundamentais</h4>
@@ -299,14 +294,19 @@
                     Você só pode priorizar um adversário por vez.
                 </p>
             </article>
+
         </section>
+
     </main>
+
+
 
     <footer>
         <!-- Rodapé -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 
