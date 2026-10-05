@@ -1,9 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+
+:root {
+    --bg-dark: #111317;
+    --card-bg: #1c1e24;
+    --card-sub-bg: #252830;
+    --accent-gold: #e5b869;
+    --accent-purple: #9d4edd;
+    --text-light: #e0e0e0;
+    --text-muted: #a0a5b5;
+    --border-gold: rgba(229, 184, 105, 0.3);
+}
+
 body {
     margin: 0;
     background-color: #f4f1ea;
     color: #2b2926;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.7;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+    color: var(--accent-gold);
 }
 
 main {
@@ -35,11 +54,12 @@ main {
 
 /* Apresentação da classe */
 .classe-hero {
-    background-color: white;
+    background: linear-gradient(135deg, #1f222b 0%, #15171e 100%);
     padding: 35px;
     margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
 }
 
 .classe-hero h1 {
@@ -57,10 +77,12 @@ main {
 
 .classe-info dt {
     font-weight: bold;
+    color: var(--accent-gold);
 }
 
 .classe-info dd {
     margin-bottom: 12px;
+    color: var(--text-light);
 }
 
 /* Seção de subclasses */
@@ -318,7 +340,6 @@ footer {
     font-size: 0.85rem;
 }
 
-
 .class-card {
     border-top: 4px solid #8a2be2; /* Borda mágica */
     background: linear-gradient(180deg, #ffffff 0%, #f9f7f2 100%);
@@ -348,3 +369,4 @@ footer {
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     border: 2px solid #e6c687;
 }
+
