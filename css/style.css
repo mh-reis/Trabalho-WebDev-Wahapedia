@@ -85,6 +85,8 @@ main {
     color: var(--text-light);
 }
 
+
+
 /* Seção de subclasses */
 .classe-section {
     background-color: white;
@@ -368,5 +370,9 @@ footer {
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     border: 2px solid #e6c687;
+}
+
+.texto-preto {
+    color: #000000 !important;
 }
 
